@@ -30,11 +30,11 @@ const Item = () => {
                 <div class="card " >
 
                     <div >
-                        <img src={image} class="img-fluid mx-auto " alt={title} />
+                        <img src={image} class="mx-auto " alt={title} className="pic" />
                         <div class="card-body text-center">
                             <h5 class="card-title ">{title}</h5>
                             <p class="card-text ">{category}</p>
-                            <p class="card-text ">NTD{`${Math.round(price * 30)}`}元</p>
+                            <p class="card-text ">NTD${`${Math.round(price * 30)}`}元</p>
                             <label>數量</label>
                             <input type="number" min="1" value={qty} onChange={onChangeHandler} id="qty"
                                 name="qty" />

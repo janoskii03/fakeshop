@@ -9,6 +9,7 @@ import ShoppingCart from "./component/ShoppingCart";
 import SingleItem from "./component/SingleItem";
 import { useSelector } from "react-redux";
 import Login from "./component/Login";
+import './App.css';
 
 
 
@@ -19,8 +20,8 @@ const App = () => {
     return (
         <div >
             {token ? <Router >
-                <Header setToken={setToken} />
                 <div>
+                    <Header setToken={setToken} />
                     <Routes>
                         <Route element={<HomePage />} path='/'></Route>
                         <Route element={<SingleItem />} path='/product/:id'></Route>
@@ -31,7 +32,7 @@ const App = () => {
                         <Route>404 Not Found!</Route>
                     </Routes>
                 </div>
-            </Router > : <Login token={token} setToken={setToken} />}
+            </Router > : <Login token={token} setToken={setToken} ></Login>}
 
 
         </div >

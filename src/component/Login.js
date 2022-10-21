@@ -28,8 +28,8 @@ const Login = ({ token, setToken }) => {
         });
     }
     return (
-        <div class="container">
-            <div class=" position-absolute bottom-50 end-50 " >
+        <div class="container" className="login">
+            <div  >
                 <h1>FAKESHOP</h1>
                 <div class="mb-3">
                     <label > 帳號 </label>
@@ -41,7 +41,7 @@ const Login = ({ token, setToken }) => {
                 </div>
                 {error ? <small style={{ color: "red" }}>{error}</small> : ""}
                 <div >
-                    <button onClick={loginHandler} class="ms-5">登入</button>
+                    <button onClick={loginHandler} class="ms-4">登入</button>
                 </div>
             </div>
         </div >

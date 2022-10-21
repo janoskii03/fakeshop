@@ -38,25 +38,19 @@ const ShoppingCart = () => {
 
 
     return (
-        <div >
-            <div >
-                <div class="card" >
-                    <Item />
-                </div >
-                <div class="col-sm-6 col-sm-12 col-lg-4 position-absolute top-50 start-50">
-                    <div class="card ">
-                        <div class="card-body">
-                            <h5 class="card-title">購物車</h5>
-                            <h5 class="card-title ">數量{totalItems}件</h5>
-                            <p class="card-text ">總共NTD{totalPrice}元</p>
-                            <button type="button" class="btn ">結帳</button>
-                        </div>
-                    </div>
-                </div>
+        <div  >
+            <div className="check" >
+                <h5 >購物車</h5>
+                <h5 >數量{totalItems}件</h5>
+                <p >總共NTD${totalPrice}元</p>
+                <button type="button" class="btn btn-primary">結帳</button>
             </div>
-        </div>
-    );
+            <div className="checkitem">
+                <Item />
+            </div >
 
+        </div>
+    )
 
 
 
