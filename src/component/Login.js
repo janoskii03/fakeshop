@@ -6,7 +6,9 @@ const Login = ({ token, setToken }) => {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
+
     const loginHandler = () => {
+
         setError("");
         setPassword("");
         setUsername("");
@@ -30,7 +32,7 @@ const Login = ({ token, setToken }) => {
     return (
         <div class="container" className="login">
             <div  >
-                <h1>FAKESHOP</h1>
+                <h1 className="name">FAKESHOP</h1>
                 <div class="mb-3">
                     <label > 帳號 </label>
                     <input type="text" value={userName} onChange={(e) => setUsername(e.target.value)} />
@@ -41,7 +43,7 @@ const Login = ({ token, setToken }) => {
                 </div>
                 {error ? <small style={{ color: "red" }}>{error}</small> : ""}
                 <div >
-                    <button onClick={loginHandler} class="ms-4">登入</button>
+                    <button onClick={loginHandler} class="ms-4" className="loginbtn">登入</button>
                 </div>
             </div>
         </div >

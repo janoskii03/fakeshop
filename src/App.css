@@ -1,9 +1,21 @@
 .login {
-    text-align: center;
-    margin-top: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
+.name {
+    margin-left: 40px;
 
 }
 
+.loginbtn {
+    margin-left: 100px;
+
+}
 
 .pic {
     max-width: 50%;
@@ -25,9 +37,13 @@
 
 @media (max-width:576px) {
     .login {
-        text-align: center;
-        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
     }
+
+
 
     .pic {
         max-width: 50%;
@@ -43,8 +59,15 @@
 
 @media (max-width:768px) {
     .login {
-        text-align: center;
-        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .name {
+        margin-left: 50px;
+
     }
 
     .pic {
